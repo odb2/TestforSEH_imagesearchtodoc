@@ -59,7 +59,6 @@ namespace WindowsFormsApp2
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -79,7 +78,6 @@ namespace WindowsFormsApp2
             this.label1.Size = new System.Drawing.Size(39, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Title:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -89,7 +87,6 @@ namespace WindowsFormsApp2
             this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "Content:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -99,7 +96,6 @@ namespace WindowsFormsApp2
             this.label3.Size = new System.Drawing.Size(93, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "Content Bold:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox1
             // 
@@ -110,7 +106,6 @@ namespace WindowsFormsApp2
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "imagebox";
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button2
             // 
@@ -161,7 +156,6 @@ namespace WindowsFormsApp2
             this.richTextBox2.Size = new System.Drawing.Size(122, 60);
             this.richTextBox2.TabIndex = 12;
             this.richTextBox2.Text = "";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // Form1
             // 
@@ -182,8 +176,6 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.richTextBox1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
