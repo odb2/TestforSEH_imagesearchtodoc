@@ -14,8 +14,10 @@ This project was to complete the following features:
 
 ## How It Works
 
-1. Start the software.
-2. Popup Opens as seen here: 
+1. Download through git or download zip file and unpack onto laptop
+2. Open project file (\WindowsFormsApp2\WindowsFormsApp2.csproj) from visual studio
+3. Start the software.
+4. Popup Opens as seen here: 
 
 <div align="center"><img width="650" src="demomainscreen.jpg"></div>
 
