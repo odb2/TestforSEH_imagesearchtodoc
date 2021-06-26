@@ -36,4 +36,4 @@ This project was to complete the following features:
 
 ## Review Code
 
-* To access code right click on Form1.cs and select "View Code"
+* To access code right click on Form1.cs and select "View Code" inside visual studio.
