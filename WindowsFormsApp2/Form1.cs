@@ -201,7 +201,7 @@ namespace WindowsFormsApp2
                 Console.WriteLine($"Progress changed - {args.ProgressPercentage}%");
             };
 
-            document.Save("c:/Users/odbar/Documents/Pictures.docx", saveOptions);
+            document.Save("Pictures.docx", saveOptions);
 
             PopupWindowDoc popup = new PopupWindowDoc();
 
