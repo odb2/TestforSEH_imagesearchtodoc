@@ -17,8 +17,8 @@ This project was to complete the following features:
 1. Start the software.
 2. Popup Opens as seen here: <div><img src="demomainscreen.jpg"></div> 
 3. Insert content into Title, Content, and Content Bold textboxes then click search.
-4. Change images by clicking "Next Image" and "Previous Image".
-5. Add that image to the document by clicking on "Add to Document" then after choosing which images to show click "Create Document".
-6. Find the document named Pictures.docx inside
+4. Change images by clicking "Next Image" and "Previous Image". <div><img src="demomainscreen-nextimage.jpg"></div>
+5. Add that image to the document by clicking on "Add to Document" then after choosing which images to show click "Create Document".<div><img src="demomainscreen-addtodocument.jpg"></div>
+6. Find the document named Pictures.docx inside <div><img src="document-imagestext.jpg"></div>
 
 ## Installation
