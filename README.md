@@ -10,8 +10,8 @@ This project was to complete the following features:
 ## Installation
 
 * Built on .NET framework 4.7
-* Uses gemboxsoftware link contains instructions to download into visual studio using (https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-word-pdf-library/801) for creating and manipulating .docx documents
-* Uses HtmlAgilityPack to obtain src to images instructions to download https://www.nuget.org/packages/HtmlAgilityPack/
+* Uses gemboxsoftware link contains instructions to download into visual studio using (https://www.gemboxsoftware.com/document/examples/c-sharp-vb-net-word-pdf-library/801) for creating and manipulating .docx documents. You can also download through nuget package manager in visual studio make sure to install GemBox.Document
+* Uses HtmlAgilityPack to obtain src to images instructions to download https://www.nuget.org/packages/HtmlAgilityPack/ or use Nuget package manager in visual studio to download
 
 ## How It Works
 
