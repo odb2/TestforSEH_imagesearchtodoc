@@ -15,6 +15,6 @@ This project was to complete the following features:
 ## How It Works
 
 1. Start the software
-2. Popup Opens 
+2. Popup Opens as seen here: <img src="demomainscreen.jpg">
 
 ## Installation
