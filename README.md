@@ -16,13 +16,18 @@ This project was to complete the following features:
 
 1. Start the software.
 2. Popup Opens as seen here: 
-<br><div><img src="demomainscreen.jpg"></div><br>
+
+<div align="center"><img width="650" src="demomainscreen.jpg"></div>
+
 4. Insert content into Title, Content, and Content Bold textboxes then click search.
 5. Change images by clicking "Next Image" and "Previous Image".
-<br><div><img src="demomainscreen-nextimage.jpg"></div><br>
-6. Add that image to the document by clicking on "Add to Document" then after choosing which images to show click "Create Document".
-<br><div><img src="demomainscreen-addtodocument.jpg"></div><br>
-7. Find the document named Pictures.docx inside \WindowsFormsApp2\bin\Debug 
-<br><div><img src="document-imagestext.jpg"></div>
 
-## Installation
+<div align="center"><img width="650" src="demomainscreen-nextimage.jpg"></div>
+
+6. Add that image to the document by clicking on "Add to Document" then after choosing which images to show click "Create Document".
+
+<div align="center"><img width="650" src="demomainscreen-addtodocument.jpg"></div>
+
+7. Find the document named Pictures.docx inside \WindowsFormsApp2\bin\Debug 
+
+<div align="center"><img width="650" src="document-imagestext.jpg"></div>
