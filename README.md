@@ -15,6 +15,10 @@ This project was to complete the following features:
 ## How It Works
 
 1. Start the software
-2. Popup Opens as seen here: <img src="demomainscreen.jpg">
+2. Popup Opens as seen here: <div><img src="demomainscreen.jpg"></div> 
+3. Insert content into Title, Content, and Content Bold textboxes then click search
+4. Change images by clicking "Next Image" and "Previous Image".
+5. Add that image to the document by clicking on "Add to Document" then after choosing which images to show click "Create Document"
+6. Find the document named Pictures.docx inside
 
 ## Installation
