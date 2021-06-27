@@ -26,7 +26,7 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Search_Button_Click(object sender, EventArgs e)
         {
             string templateUrl = @"https://www.google.co.uk/search?q={0}&tbm=isch&site=imghp";
 
@@ -44,9 +44,6 @@ namespace WindowsFormsApp2
                     string result = wc.DownloadString(String.Format(templateUrl, new object[] {textBox1.Text+" "+richTextBox2.Text}));
                     //Console.WriteLine("Our result {0}", result);
 
-                    //we have valid markup, this will change from time to time as google updates.
-                    //Console.WriteLine("before if");
-
                     if (result.Contains("t0fcAb"))
                     {
                         //Console.WriteLine("inside if");
@@ -62,12 +59,6 @@ namespace WindowsFormsApp2
                             urls.Add(src.Value);
                         }
                         urls.RemoveAt(0);
-                        //lets create a linq query to find all the img's stored in that images_table class.
-                        /*
-                         * Essentially we get search for the table called images_table, and then get all images that have a valid src containing images?
-                         * which is the string used by google
-                        eg  https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmGxh15UUyzV_HGuGZXUxxnnc6LuqLMgHR9ssUu1uRwy0Oab9OeK1wCw
-                         */
 
                         //Console.WriteLine("urls 1 = {0}", urls[1]);
 
@@ -93,7 +84,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void AddtoDocument_Button_Click(object sender, EventArgs e)
         {
             urls_save.Add(urls[index]);
 
@@ -104,7 +95,7 @@ namespace WindowsFormsApp2
             popup.Dispose();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void NextImage_Button_Click(object sender, EventArgs e)
         {
             using (WebClient wc = new WebClient())
             {
@@ -143,7 +134,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void CreateDocument_Button_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Start Document Creation - {0}", urls_save[0]);
 
@@ -185,7 +176,7 @@ namespace WindowsFormsApp2
             popup.Dispose();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void PreviousImage_Button_Click(object sender, EventArgs e)
         {
             using (WebClient wc = new WebClient())
             {
