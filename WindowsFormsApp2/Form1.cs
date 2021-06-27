@@ -19,7 +19,11 @@ namespace WindowsFormsApp2
     {
         public List<string> urls = new List<string>();
         public int index = 1;
+        public int count_search = 0;
         public List<string> urls_save = new List<string>();
+        public List<string> titlebox = new List<string>();
+        public List<string> contentbox = new List<string>();
+        public List<string> contentboldbox = new List<string>();
 
         public Form1()
         {
@@ -29,8 +33,13 @@ namespace WindowsFormsApp2
         private void Search_Button_Click(object sender, EventArgs e)
         {
             urls.Clear();
-            urls_save.Clear();
             index = 1;
+            count_search++;
+
+            titlebox.Add(textBox1.Text);
+            contentbox.Add(richTextBox1.Text);
+            contentboldbox.Add(richTextBox2.Text);
+
             string templateUrl = @"https://www.google.co.uk/search?q={0}&tbm=isch&site=imghp";
 
             //check that we have a term to search for.
@@ -154,11 +163,6 @@ namespace WindowsFormsApp2
             var section = new Section(document);
             document.Sections.Add(section);
 
-            document.Sections.Add(
-            new Section(document,
-                new Paragraph(document,
-                    new Run(document, "Title:"+textBox1.Text+" Content:"+richTextBox2.Text+" Content Bold:"+richTextBox2.Text))));
-
             var paragraph = new Paragraph(document);
             section.Blocks.Add(paragraph);
 
@@ -167,6 +171,12 @@ namespace WindowsFormsApp2
             {
                 Picture picture1 = new Picture(document, urls_save[i], 50, 50, LengthUnit.Pixel);
                 paragraph.Inlines.Add(picture1);
+            }
+
+            for (int i = 0; i < count_search; i++)
+            {
+                Run run = new Run(document, "Title:" + titlebox[i] + " Content:" + contentbox[i] + " Content Bold:" + contentboldbox[i]+" ");
+                paragraph.Inlines.Add(run);
             }
 
             // Create save options
