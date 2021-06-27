@@ -76,6 +76,12 @@ namespace WindowsFormsApp2
 
                             //load an image from that stream.
                             pictureBox1.Image = Image.FromStream(ms);
+
+                            //Make Buttons Visible for Image and document manipulation
+                            button3.Visible = true;
+                            button4.Visible = true;
+                            button5.Visible = true;
+                            button2.Visible = true;
                         }
 
                     }

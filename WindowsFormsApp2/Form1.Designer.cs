@@ -115,6 +115,7 @@ namespace WindowsFormsApp2
             this.button2.TabIndex = 8;
             this.button2.Text = "Add to Document";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.AddtoDocument_Button_Click);
             // 
             // button3
@@ -125,6 +126,7 @@ namespace WindowsFormsApp2
             this.button3.TabIndex = 9;
             this.button3.Text = "Next Image";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
             this.button3.Click += new System.EventHandler(this.NextImage_Button_Click);
             // 
             // button4
@@ -136,6 +138,7 @@ namespace WindowsFormsApp2
             this.button4.TabIndex = 10;
             this.button4.Text = "Create Document";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.CreateDocument_Button_Click);
             // 
             // button5
@@ -146,6 +149,7 @@ namespace WindowsFormsApp2
             this.button5.TabIndex = 11;
             this.button5.Text = "Previous Image";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
             this.button5.Click += new System.EventHandler(this.PreviousImage_Button_Click);
             // 
             // richTextBox2
@@ -176,6 +180,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.richTextBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
