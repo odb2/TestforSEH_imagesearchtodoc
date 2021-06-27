@@ -1,5 +1,13 @@
 # TestforSEH_imagesearchtodoc
 
+## Table of Contents
+* Project
+* Installation
+* How it Works
+* Review Code/Documentation
+
+
+## Project
 This project was to complete the following features:
 
 * Create a solution that accepts user input and generates a power point slide (or other document which accepts images/text)
@@ -40,6 +48,47 @@ This project was to complete the following features:
 
 <div align="center"><img width="650" src="document-imagestext.jpg"></div>
 
-## Review Code
+## Review Code/Documentation
 
-* To access code right click on Form1.cs and select "View Code" inside visual studio.
+Form1.cs - WindowsForm which contains all functions to work app<br>
+popupwindowdoc.cs - WindowsForm which contains popup to show when creating document or adding images to documentS
+
+    private void Search_Button_Click(object sender, EventArgs e)
+
+<ul>
+<li>desc: Function to search google images based on title and content bold words and display the first image.</li>
+<li>parameters: sender, event</li>
+<li>returns: list urls which contains images found from search</li>
+</ul>
+
+    private void AddtoDocument_Button_Click(object sender, EventArgs e)
+
+<ul>
+<li>desc: Works the "Add to Document" button by adding the current image from the url list to a new list named urls_save.</li>
+<li>parameters: sender, event</li>
+<li>returns: list urls_save which contains images going to be added to document.</li>
+</ul>
+
+    private void NextImage_Button_Click(object sender, EventArgs e)
+
+<ul>
+<li>desc: Works the "Next Image" button by changing the image shown to the next index.</li>
+<li>parameters: sender, event</li>
+<li>returns: new image displayed.</li>
+</ul>
+
+    private void PreviousImage_Button_Click(object sender, EventArgs e)
+
+<ul>
+<li>desc: Works the "Previous Image" button by changing the image shown to the previous index.</li>
+<li>parameters: sender, event</li>
+<li>returns: new image displayed.</li>
+</ul>
+
+    private void CreateDocument_Button_Click(object sender, EventArgs e)
+
+<ul>
+<li>desc: Works the "Create Document" button by saving the images along with content into a docx file.</li>
+<li>parameters: sender, event</li>
+<li>returns: docx file saved.</li>
+</ul>
