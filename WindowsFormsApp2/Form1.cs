@@ -17,9 +17,9 @@ namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
-        List<string> urls = new List<string>();
-        int index = 1;
-        List<string> urls_save = new List<string>();
+        public List<string> urls = new List<string>();
+        public int index = 1;
+        public List<string> urls_save = new List<string>();
 
         public Form1()
         {
@@ -28,6 +28,9 @@ namespace WindowsFormsApp2
 
         private void Search_Button_Click(object sender, EventArgs e)
         {
+            urls.Clear();
+            urls_save.Clear();
+            index = 1;
             string templateUrl = @"https://www.google.co.uk/search?q={0}&tbm=isch&site=imghp";
 
             //check that we have a term to search for.
