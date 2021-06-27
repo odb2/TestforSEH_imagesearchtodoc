@@ -10,6 +10,8 @@
 ## Project
 This project was to complete the following features:
 
+* Bonus Feature: This project allows multiple images from multiple searches to be shown inside a single document
+
 * Create a solution that accepts user input and generates a power point slide (or other document which accepts images/text)
 * Have a Title area
 * Have a Text area
