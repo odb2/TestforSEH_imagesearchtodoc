@@ -46,9 +46,10 @@ This project was to complete the following features:
 
 <div align="center"><img width="650" src="demomainscreen-addtodocument.jpg"></div>
 
-7. Find the document named Pictures.docx inside \WindowsFormsApp2\bin\Debug 
+7. Find the document named powerpoint.pptx inside \WindowsFormsApp2\bin\Debug 
 
-<div align="center"><img width="650" src="document-imagestext.jpg"></div>
+<div align="center"><img width="650" src="document-imagestext3.jpg"></div>
+<div align="center"><img width="650" src="document-imagestext2.jpg"></div>
 
 ## Review Code/Documentation
 
