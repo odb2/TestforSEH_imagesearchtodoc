@@ -39,6 +39,9 @@
     <Reference Include="GemBox.Document, Version=33.0.0.1249, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
       <HintPath>..\packages\GemBox.Document.33.0.1249\lib\net35\GemBox.Document.dll</HintPath>
     </Reference>
+    <Reference Include="GemBox.Presentation, Version=25.0.0.1129, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>..\packages\GemBox.Presentation.25.0.1129\lib\net35\GemBox.Presentation.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.11.34.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\HtmlAgilityPack.1.11.34\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>

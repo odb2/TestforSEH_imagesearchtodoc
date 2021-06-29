@@ -10,7 +10,8 @@ using System.Windows.Forms;
 using System.Net;
 using HtmlAgilityPack;
 using System.IO;
-using GemBox.Document;
+//using GemBox.Document;
+using GemBox.Presentation;
 using System.Threading;
 
 namespace WindowsFormsApp2
@@ -176,37 +177,36 @@ namespace WindowsFormsApp2
         {
             Console.WriteLine("Start Document Creation - {0}", urls_save[0]);
 
+
             ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+            var presentation = new PresentationDocument();
 
-            var document = new DocumentModel();
-
-            var section = new Section(document);
-            document.Sections.Add(section);
-
-            var paragraph = new Paragraph(document);
-            section.Blocks.Add(paragraph);
+            // Create new presentation slide.
+            var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
             // Create and add an inline picture with GIF image.
+
+            int[] arr = new int[] {2,4,6,8,10,12,14,16,18,20,22,24,26,28,30};
             for (int i = 0; i < urls_save.Count; i++)
             {
-                Picture picture1 = new Picture(document, urls_save[i], 50, 50, LengthUnit.Pixel);
-                paragraph.Inlines.Add(picture1);
+                // Create first picture from resource data.
+                Picture picture = null;
+                picture = slide.Content.AddPicture(urls_save[i], arr[i], 2,2,2, LengthUnit.Centimeter);
+
             }
+
+            var slide2 = presentation.Slides.AddNew(SlideLayoutType.Custom);
+
+            var textBox = slide2.Content.AddTextBox(ShapeGeometryType.Rectangle, 2, 2, 5, 4, LengthUnit.Centimeter);
 
             for (int i = 0; i < count_search; i++)
             {
-                Run run = new Run(document, "Title:" + titlebox[i] + " Content:" + contentbox[i] + " Content Bold:" + contentboldbox[i]+" ");
-                paragraph.Inlines.Add(run);
+                var paragraph = textBox.AddParagraph();
+
+                paragraph.AddRun("Title:" + titlebox[i] + " Content:" + contentbox[i] + " Content Bold:" + contentboldbox[i] + " ");
             }
 
-            // Create save options
-            var saveOptions = new DocxSaveOptions();
-            saveOptions.ProgressChanged += (eventSender, args) =>
-            {
-                Console.WriteLine($"Progress changed - {args.ProgressPercentage}%");
-            };
-
-            document.Save("Pictures.docx", saveOptions);
+            presentation.Save("powerpoint.pptx");
 
             PopupWindowDoc popup = new PopupWindowDoc();
 
