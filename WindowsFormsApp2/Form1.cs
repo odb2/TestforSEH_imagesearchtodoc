@@ -32,6 +32,26 @@ namespace WindowsFormsApp2
 
         private void Search_Button_Click(object sender, EventArgs e)
         {
+            string[] words = richTextBox2.Text.Split(',');
+            foreach (string word in words)
+            {
+                int startindex = 0;
+                while (startindex < richTextBox1.TextLength)
+                {
+                    int wordstartIndex = richTextBox1.Find(word, startindex, RichTextBoxFinds.None);
+                    if (wordstartIndex != -1)
+                    {
+                        richTextBox1.SelectionStart = wordstartIndex;
+                        richTextBox1.SelectionLength = word.Length;
+                        richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Bold);
+                    }
+                    else
+                        break;
+                    startindex += wordstartIndex + word.Length;
+                }
+            }
+
+
             urls.Clear();
             index = 1;
             count_search++;
@@ -231,6 +251,14 @@ namespace WindowsFormsApp2
                     pictureBox1.Image = Image.FromStream(ms);
                 }
             }
+        }
+
+        private void resetbutton_click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionStart = 0;
+            richTextBox1.SelectAll();
+            richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Regular);
+
         }
     }
 }
