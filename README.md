@@ -33,7 +33,7 @@ This project was to complete the following features:
 1. Download through git or download zip file and unpack onto laptop
 2. Open project file (\WindowsFormsApp2\WindowsFormsApp2.csproj) from visual studio
 3. Start the software.
-4. Popup Opens as seen here: 
+4. Popup Opens as seen here, In order for the bold to work it must map to a word in the content section as shown in image and multiple words bolded must be seperated by , in the content bold textbox after clicking search you will see the text changed to bold
 
 <div align="center"><img width="650" src="demomainscreen.jpg"></div>
 
